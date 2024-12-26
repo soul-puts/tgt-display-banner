@@ -1,0 +1,279 @@
+.tgt-poster-container {
+  background: #000000;
+  color: #ffffff;
+  padding: 2px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: sans-serif, Arial, Helvetica, ;
+}
+
+.ticker-wrapper {
+  margin-bottom: 30px;
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+.title-animate {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 1s ease-out;
+  line-height: 1.2;
+}
+
+.neon-text {
+  color: #00ffff;
+ font-size: 5rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 1800px;
+  padding: 0 20px;
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #00ff00;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  padding: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  font-size: 7rem;
+  margin-bottom: 20px;
+}
+
+.card-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,255,136,0.1), transparent);
+  z-index: -1;
+}
+
+.cta-button {
+  background: #ff0000;
+  border: 3px solid #ffffff;
+  padding: 20px 50px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 40px auto;
+  transition: transform 0.9s ease;
+  animation: blink 3s infinite; /* Add blink animation */
+}
+
+
+.cta-button-name {
+  background: #ff0000;
+  border: 3px solid #ffffff;
+  padding: 20px 50px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 40px auto;
+  transition: transform 2s ease;
+}
+
+
+.button-text-name {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  animation: boom-animation 3s ease-in-out infinite; /* Boom in/out animation */
+}
+
+/* Keyframes for blink effect */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+}
+
+/* Optional: Add hover effect for better interactivity */
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  30% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Keyframes for Boom In/Out Effect */
+@keyframes boom-animation {
+  0%, 100% {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.5) translateX(50%);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1) translateX(-50%);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.5) translateX(0%);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slide-text {
+  0% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(5%);
+  }
+
+}
+
+
+.slide-in {
+  animation: slide-in 3s ease-out forwards;
+}
+
+.pulse {
+  animation: pulse 3s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title-animate {
+    font-size: 2.5rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-heading {
+    font-size: 16rem;
+  }
+  
+  .sub-heading {
+    font-size: 5rem;
+  }
+  
+  h3 {
+    font-size: 3.5rem;
+  }
+  
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .main-heading {
+    font-size: 24rem;
+  }
+  
+  .sub-heading {
+    font-size: 8rem;
+  }
+}
+
+.main-heading {
+  font-family:  sans-serif, Arial Black, Arial Bold, Arial, ;
+}
+
+.sub-heading {
+  font-family:  sans-serif, Arial, Helvetica, sans-serif;
+}
+
+h3, p {
+  font-family:  sans-serif,Arial, Helvetica, sans-serif;
+}
+
+/* Animation for slide-in effect */
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
