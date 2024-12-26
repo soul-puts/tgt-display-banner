@@ -36,8 +36,12 @@ function TgtPoster() {
           </button>
         </div>
         <button className='cta-button-name'>
-          <span className='button-text-name pulse'>MR. ASHISH</span>
-          <span className='button-shine'></span>
+          <span className='button-text-name pulse'>MR. ASHISH </span>
+          <span className='button-shine'>(MBA , PHD) </span>
+          <br></br>
+          <span className='button-shine'>
+            (15 years of Trading Experience){' '}
+          </span>
         </button>
       </div>
     </div>
