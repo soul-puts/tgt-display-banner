@@ -12,11 +12,12 @@ function TradingViewMarketOverview() {
     script.async = true
     script.innerHTML = JSON.stringify({
       colorTheme: 'dark',
+      customFontFamily: 'Arial, sans-serif, 10rem',
       dateRange: '3M',
       showChart: false,
       locale: 'en',
       width: '100%',
-      height: '10%',
+      height: '60%',
       largeChartUrl: '',
       isTransparent: false,
       showSymbolLogo: true,
@@ -26,16 +27,56 @@ function TradingViewMarketOverview() {
           title: 'Indices',
           symbols: [
             {
+              s: 'BSE:SENSEX',
+              d: 'SENSEX 100',
+            },
+            {
               s: 'FOREXCOM:SPXUSD',
               d: 'S&P 500 Index',
             },
+
+            {
+              s: 'BSE:BSE100',
+              d: 'BSE 100',
+            },
+            { s: 'NASDAQ:AAPL', d: 'AAPL' },
+            {
+              s: 'NASDAQ:TSLA',
+              d: 'TSLA',
+            },
+            {
+              s: 'BSE:ITC',
+              d: 'ITC',
+            },
+            {
+              s: 'BSE:RELIANCE',
+              d: 'RELIANCE',
+            },
+            {
+              s: 'BSE:SWIGGY',
+              d: 'SWIGGY',
+            },
+            {
+              s: 'BSE:WAAREERTL',
+              d: 'WAAREERTL',
+            },
+
             {
               s: 'FOREXCOM:NSXUSD',
               d: 'US 100 Cash CFD',
             },
             {
-              s: 'BSE:SENSEX',
-              d: 'SENSEX 100',
+              s: 'FOREXCOM:DJI',
+              d: 'Dow Jones Industrial Average Index',
+            },
+            {
+              s: 'INDEX:NKY',
+              d: 'Japan 225',
+            },
+
+            {
+              s: 'NYMEX:CL1!',
+              d: 'WTI Crude Oil',
             },
           ],
           originalTitle: 'Indices',
